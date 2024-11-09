@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7ecec;
+}
+.resume {
+    background-color: #f6f5f9b9;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.og {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(191, 181, 230);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 15px;
+    animation: bounceIn 2s ease-in-out;
+    height: 20vh;
+}
+
+.og img {
+    border-radius: 100%;
+    height: 150px;   
+     width: 130px;
+    margin-right: 20px;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.details {
+    flex: 1;
+    margin-right: 20px;
+    background-color:rgb(191, 181, 230);
+    font-size: medium;
+    color: rgb(19, 15, 15);
+}
+
+.contact, .education, .skill {
+    margin-bottom: 20px;
+}
+
+.summary {
+    flex: 2; 
+    padding : 20px;   
+    background-color:white;
+    color:black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .og {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .og img {
+        margin-bottom: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details, .summary {
+        margin: 10px 0;
+    }
+}
+
+a {
+    font-size: 1.5vh;
+    color:black;
+    text-decoration: none;
+}
+
+.contact a {
+    font-size: 1.6vh;
+    color: #f7ecec;
+}
+
+ul {
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;  
+}
+
+li{
+    padding-top: 10px;
+}
+
+.contact {
+    font-size: medium;
+    color: rgb(14, 11, 11);
+}
+
+.skill, li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px; 
+}
+
+.skill a {
+    font-size: medium;
+    color: black;
+    text-decoration: underline ;
+}
+.summary a {
+    text-decoration: underline;
+}
+
+.detail hr {
+    width: 40px;
+}
+.hard{
+    padding-left: 100px;
+}
+.soft{
+    padding-left: 80px;
+}
+.ski{
+    padding-left: 80px;
+}
+.certi{
+    padding-left: 80px;
+}
+.phone {
+    padding-left: 3px;
+}
